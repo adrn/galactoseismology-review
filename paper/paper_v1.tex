@@ -1,7 +1,23 @@
 \documentclass[galaxies,article,submit,moreauthors,pdftex,10pt,a4paper]{mdpi}
 
-% APW COMMENT: Oof, I hate the formatting and math style of this journal, but I
+% APW COMMENT: OMG I hate the formatting and math style of this journal, but I
 % guess we'll have to just roll with it...
+
+% APW COMMENT: We might get into a battle over the Oxford comma again, but this
+% time you're in control!!
+
+% APW COMMENT: Stylistic comment: I don't like sentences like "\cite{...} found
+% that XX" or "As found in \cite{...}" -- my personal rule is that I should be
+% able to read the text if I deleted all of the \cite commands. So, I instead
+% prefer to write summary statements, and then use \citep{...} as the reference
+% at the end of a given statement. I tried to change instances I could found,
+% but that might be controversial and I hope I don't annoy you too much...
+
+% APW COMMENT: We should mention Hercules-Aquila as a genuine "shell" candidate
+% since it does have RR Lyrae?
+
+% APW COMMENT: I think your reference "jurie17" should be "lurie17" -- maybe
+% combined John Lurie's last name with Mario Juric's?
 
 \usepackage{microtype}  % ALWAYS!
 \usepackage{amsmath}
@@ -24,11 +40,10 @@
 \newcommand{\kpc}{\mathrm{kpc}}
 \newcommand{\msun}{\mathrm{M}_\odot}
 \newcommand{\kms}{\mathrm{km}~\mathrm{s}^{-1}}
+\newcommand{\frrmg}{\ensuremath{f_{\rm RR:MG}}}
 
+% APW COMMENT: TODO - need to get Maria's macro for \ion
 \newcommand{\ion}[1]{#1}
-
-% APW notes to self:
-% - Hercules-Aquila, false-positive?
 
 %--------------------
 % Class Options:
@@ -236,23 +251,46 @@ We summarize this observational and theoretical work in Section 2 and 3 respecti
 Armed with this understanding of the nature of these substructures, we go on in Section 4 to discuss prospects for mapping such structures more generally around our own and other Galaxies.
 We end in Section 5 by outlining the motivation for making such maps, asking what they might be telling us about bigger questions: galaxy formation scenarios and dark matter distributions.
 
+% APW COMMENT: I'm not sure about the subsection grouping below.  I'm wondering
+% if there is another way to reorganize...Perhaps subsections for name of
+% structure, subsubsections for "observational follow-up", "theoretical
+% understanding", "future work needed"? i.e. take the transpose of what is here
+% now, if you know what I mean.
 
 \section{The Nature of Structures Around the Outer Disk --- Summary of Observations}
 \label{sec:obs}
+
 \subsection{Spectroscopic surveys}
 
-Over the last five years our group has pursued a spectroscopic campaign to follow up 2MASS M giants that had been identified as groups in position and photometry, with the aims of confirming that these stars were indeed associated, mapping their velocity structures and producing models of their formation.
-We were interested in particular in {\it avoiding} the collimated stellar streams that had been well-studied in prior work \citep[such as Sgr, Orphan, GD1 and Pla 5 --- see, e.g.,][]{law10,koposov10,kuepper15,bovy16}
-and instead looking at groups that appeared as diffuse, amorphous, extended stellar structures such as the TriAnd Clouds \citep{rochapinto04} and A13 \citep{sharma10}.
-These morphologies suggested these structures could be  {\it shells} (seen from an internal perspective) --- debris from the disruption of satellite galaxies on radial orbits \citep{johnston08}.
+From clustering in positions or distance alone, many candidate groups and
+over-densities of M giants have been identified in the outer disk / inner halo.
+Over the last five years our group has pursued a spectroscopic campaign to
+follow up members of these candidate structure with the aims of (1) confirming
+the existence of substructure in velocities, (2) measuring chemical abundances,
+and (3) studying the constituent stellar populations.
+These goals then inform our own efforts to produce plausible dynamical
+formation scenarios using simulations.
+We were interested in particular in {\it avoiding} the collimated stellar streams that have been well-studied in prior work \citep[such as Sgr, Orphan, GD1 and Pal 5 --- see, e.g.,][]{law10,koposov10,kuepper15,bovy16}
+and instead considered groups that appeared as diffuse, amorphous, extended stellar structures such as TriAnd 1 and 2 \citep{rochapinto04} and A13 \citep{sharma10}.
+Initial interpretations of these morphologies suggested the structures could be {\it shells} --- debris from the disruption of satellite galaxies on near-radial orbits \citep{johnston08} --- as seen from an internal perspective.
 
-Our first results, extending the \cite{rochapinto04} velocity sample of the TriAnd region to all stars identified as members in \cite{sharma10}, were published in  \cite{sheffield14}.
-We found that the groups members formed 2 sequences in color-magnitude space, which we identified with the two distinct MSTO in optical data by \cite{martin07}, and named TriAnd I and TriAnd II respectively.
-Both sequences formed a clear over-density in velocity, with a low velocity dispersion ($\sim 25$ km/s)  and steady gradient of average velocity with $l$.
-We successfully modeled TriAnd I/II simultaneously as debris stripped over two separate pericentric passages from a single accreted satellite on a low-eccentricity, retrograde, near planar orbit.
-However, these debris structures were morphologically closer to {\it streams} rather than {\it shells}.
+In our first results \citep{sheffield14}, we extended a prior sample of TriAnd
+M giants \citep{rochapinto04} by obtaining spectra of all members identified
+with an automated clustering algorithm applied to 2MASS catalog sources in the
+region \citep{sharma10}.
+We found that the groups members formed two sequences in color-magnitude space, which we identified with the two distinct MSTO in optical data by \cite{martin07}, named TriAnd 1 and TriAnd 2 respectively.
+Both sequences form a clear over-density in radial velocity over the background halo velocity distribution and form a low velocity-dispersion ($\sim 25~\kms$) sequence with a steady gradient of mean Galactic standard-of-rest (GSR) radial velocity ($v_{\rm GSR}$) from positive to negative $v_{\rm GSR}$ with increasing $l$.
+% APW COMMENT: I added some more specifics, but it feels a little clunky.
+% Trying to say that it goes from positive vGSR at low longitudes to negative
+% vGSR at larger longitudes
+In this work, we presented a model that simultaneously and approximately reproduces TriAnd 1 and 2 as tidal debris stripped over two separate pericentric passages from a single accreted satellite on a low-eccentricity, retrograde, near-planar orbit.
+These debris structures were morphologically closer to {\it streams} rather
+than {\it shells}, but still subtended large areas on the sky as observed from
+the Sun's position.
 
 \cite{li17} continued the spectroscopic survey to look at A13, again finding coherent velocity structures with low dispersion.
+% APW COMMENT: (I'm sure you know) but this paragraph needs more detail about
+% the Li et al. paper. Adding this as a TODO for us both.
 
 \begin{figure}[t]
 \centering
@@ -262,16 +300,25 @@ Summary of velocity distributions of M giants}
 \end{figure}
 
 
-Figure \ref{fig:ting_vel}, reproduced from \cite{li17}, summarizes the M giant line-of-sight velocity results for all our low-latitude structures.
-Not only do these groups all have low dispersion, confirming the association of stars within each group, they also appear to collectively exhibit a continuous, gentle gradient with $l$.
-This latter finding is suggestive of the groups being associated with each other, forming a group of groups.
+Figure~\ref{fig:ting_vel} (reproduced from \citealt{li17}), summarizes the line-of-sight (GSR) velocity trends of M giants in each of the three low-latitude structures.
+Not only do these groups all have low dispersions relative to the stellar halo
+--- which confirms the association of stars within each group --- they also
+appear to collectively exhibit a continuous gradient with Galactic longitude,
+$l$.
+This latter finding suggests that the groups may be associated.
 
 %{\it Summary: the low latitude structures each have low velocity dispersions supporting the genuine association of the stars within them; they also form velocity sequences as functions of Galactic longitude that are continuous across the groups.}
 
 \subsection{Stellar Populations}
 
-Motivated by our initial spectroscopic results for the M giant stars, in \cite{pricewhelan15} we selected RR Lyrae stars in TriAnd region from the Catalina Survey \citep{drake14}, that had appropriate apparent magnitudes to be possible members of the overdensity.
-We collected spectra for our sample in order to confirm which fell within the velocity sequence defined by the M giant stars with the aims of finding the distances to the TriAnd I and TriAnd II sequences more precisely and better constraining the models.
+Motivated by the observed, low-dispersion velocity distribution of the M giant stars in TriAnd, we sought to observe other distance tracer stars --- RR Lyrae-type pulsators --- in the region, determine their membership, and improve the distance estimates to the structure.
+We selected RR Lyrae stars in the TriAnd region from the pre-classified
+variable star catalog produced by the Catalina Sky Survey \citep{drake14},
+using a conservative distance cut to account for uncertainties in the RR Lyrae
+and M giant photometric distance estimates.
+We obtained spectra for $\approx$1/3 of the total number of RR Lyrae in the M
+giant volume considered to be associated with TriAnd 1 and measured radial
+velocities for these stars \cite{pricewhelan15}.
 
 \begin{figure}[t]
 \centering
@@ -280,21 +327,26 @@ We collected spectra for our sample in order to confirm which fell within the ve
 v vs l for M giants vs RR Lyrae}
 \end{figure}
 
-Figure \ref{fig:apw} \citep[reproduced from][]{pricewhelan15} shows the results of our survey: unlike the M giants (gray points) the RR Lyrae (black points) showed no clear, tight velocity sequence.
-By modeling both the RR Lyrae and M giants velocity data as mixtures of two gaussians representing a cold foreground sequence and a possible background halo population of larger dispersion, we were able to show that the number ratio of RR Lyrae to M giants ($f_{\rm RR:M}$), within the overdensity was less than ??? with 95\% confidence.
+Figure~\ref{fig:apw} \citep[reproduced from][]{pricewhelan15} shows the results of our survey: unlike the M giants (gray points) the RR Lyrae (black points) show no clear, tight velocity sequence.
+By modeling both the RR Lyrae and M giants velocity data as mixtures of two gaussians representing a cold foreground sequence and a possible background halo population of larger dispersion, we were able to show that the number ratio of RR Lyrae to M giants (\frrmg) within the overdensity was $<0.38$ with 95\% confidence.
 
-In order to aid with the interpretation of this discovery, Figure \ref{fig:isochrones} plots isochrones for two 10 Gyear-old populations of low and intermediate metallicity, including the color range for RR Lyrae and M spectral class.
+In order to aid with the interpretation of this discovery, Figure~\ref{fig:isochrones} plots isochrones for two $10~{\rm Gyr}$-old populations of low and intermediate metallicity, including the color range for RR Lyrae and M spectral class.
 It emphasizes our understanding that these two types of stars are tracers of populations with quite distinct metallicities and illustrates why, while the initial aim of our survey to find more accurate distances to TriAnd I and II had failed, our results could be even more intriguing.
-The metallicity distributions in nearly all existing satellite galaxies orbiting the Milky Way \citep[e.g.][]{kirby11} are such that they contain no M giant stars (i.e. $f_{\rm RR:M} = \infty$).
-The very largest satellites (the Large Magellanic Cloud and the Sagittarius dwarf galaxy), with the most metal rich populations, have $f_{\rm RR:M}\sim 0.5$ \citep{pricewhelan15}.
-In contrast, the Galactic disk has very few RR Lyrae and  $f_{\rm RR:M} \sim 0$, most consistent with our findings \citep{amrose01}.
+The metallicity distributions in nearly all existing satellite galaxies
+orbiting the Milky Way \citep[e.g.,][]{kirby11} are typically biased towards
+low metallicities, such that they contain no or few M giant stars (i.e. $\frrmg = \infty$).
+The largest satellites (the Large Magellanic Cloud and the Sagittarius dwarf galaxy) are exceptions as they contain the most metal rich populations; these dwarfs have $\frrmg \sim 0.5$ \citep{pricewhelan15}.
+In contrast, the Galactic disk is an overall metal-rich population and thus has very few RR Lyrae \citep[i.e. $f_{\rm RR:M} \sim 0$][]{amrose01}, more consistent with our findings for the stellar population of TriAnd 1.
 
-Our work on the TriAnd region motivated us to go on to look at possible associations of RR Lyrae with the M giant sequences we had found for Mon/GASS and A13  \cite{sheffield17}.
-We found $f_{\rm RR:M}$ values similar to those observed for TriAnd , and consistent with membership of the Galactic disk.
+Our work on the stellar populations of the TriAnd region motivated us to look at possible associations of RR Lyrae with the M giant sequences found in Mon/GASS and A13 \citep{sheffield17}.
+For the surveyed regions of these structures, we find \frrmg\ values similar to those observed for TriAnd , and consistent with membership of the Galactic disk.
 
 %{\it Summary: the stellar populations in these groups look like each other; they are more consistent with those in the Galactic disk rather than those observed in the stellar halo or Galactic  satellites.}
 
 \subsection{Abundance Patterns}
+
+% APW COMMENT: This section needs more context and perhaps much less detail
+% about the actual observations...
 
 \cite{chou2010b} took high-resolution spectra of 21 M giants in the GASS overdensity. They found that for some stars the abundances of titanium and yttrium deviate from that of the Milky Way disk stars at the same metallicity.  For Ti, the measured abundances are lower by up to 0.4 dex compared to the mean trends known for main-sequence stars of the Galactic disk (e.g Reddy et al. 2003, Bensby et al. 2014). The mean offset for [Y/Fe] is about 0.2 dex at [Fe/H] $\approx -0.5$. Comparing with their own results in Sgr dwarf spheroidal galaxy \citep{chou2010a} concluded that the abundances are consistent with the GASS stars having an external origin. It should be noted, however, that their results do not agree with the abundances of Ti and, in particular, La, measured in the Canis Major overdensity by \cite{sbordone2005}. Their analysis was based on spectra covering a limited spectral region in the near-IR, including 11 neutral iron and 2 neutral titanium lines. Also \cite{chou2010b} caution that the effects of non-local thermodynamic equilibrium (non-LTE) may be significant, since their measurement of metallicity and Ti abundances relies on the LTE analysis of lines of neutral species,
 
@@ -306,6 +358,10 @@ Our results for TriAnd and A13 do not confirm the conclusions by \cite{chou2010b
 %{\it Summary: the abundance patterns  of the low-latitude structures are similar to those of the thick disk of our Galaxy.}
 
 \subsection{Local Spectroscopic Surveys}
+
+% APW COMMENT: If the sections are reorganized to be by structure instread,
+% this could get moved to the discussion. "Discussion: connections to velocity
+% structure near the Sun" or something
 
 Large scale spectroscopic surveys have allowed a detailed re-examination of the distribution of stellar velocities.
 Asymmetries between the Northern and Southern Galactic hemispheres in the vicinity of the Sun have been seen in the density and velocity distributions using data from SDSS \citep{widrow12,yanny13} and RAdial Velocity Experiment \citep[RAVE, see][]{??,williams13}.
