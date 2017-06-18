@@ -91,25 +91,35 @@ $^{2}$ \quad Affiliation 2; e-mail@e-mail.com}
 \corres{Correspondence: e-mail@e-mail.com; Tel.: +x-xxx-xxx-xxxx}
 
 % Current address and/or shared authorship
-\firstnote{Current address: Affiliation 3} 
+\firstnote{Current address: Affiliation 3}
 \secondnote{These authors contributed equally to this work.}
 % The commands \thirdnote{} till \eighthnote{} are available for further notes
 
 % Simple summary
 %\simplesumm{}
 
-% Abstract (Do not use inserted blank lines, i.e. \\) 
+% Abstract (Do not use inserted blank lines, i.e. \\)
 \abstract{
 %A single paragraph of about 200 words maximum. 1) Background: Place the question addressed in a broad context and highlight the purpose of the study; 2) Methods: Describe briefly the main methods or treatments applied; 3) Results: Summarize the article's main findings; and 4) Conclusion: Indicate the main conclusions or interpretations. The abstract should be an objective representation of the article, it must not contain results which are not presented and substantiated in the main text and should not exaggerate the main conclusions.
-Deep star count surveys around the Milky Way have revealed diffuse structures encircling our Galaxy, at distances from the Galactic center and heights above and below the Galactic plane far beyond where the stellar disk has historically been thought to end.
-This paper reviews results from our own and other observational programs, which together suggest that, despite their extreme positions, the stars in these structures were nevertheless formed in our disk.
-Mounting evidence from observations and simulations implies connections between several of these distinct structures, indicative of collective disk oscillations that can plausibly be traced all the way to asymmetries seen in the stellar velocity distribution around the Sun.
-There are multiple interesting implications of these findings: 
+Deep photometric surveys of the Milky Way have revealed diffuse structures
+encircling our Galaxy in regions far beyond the ``classical'' end of the
+stellar disk.
+This article reviews results from our own and other observational programs, which together suggest that, despite their extreme positions, the stars in these structures were nevertheless formed in our Galactic disk.
+Mounting evidence from recent observations and simulations implies kinematic connections between several of these distinct structures.
+This suggests the existence of collective disk oscillations that can plausibly be traced all the way to asymmetries seen in the stellar velocity distribution around the Sun.
+There are multiple interesting implications of these findings:
 they promise new perspectives on the process of disk heating;
-they give direct evidence for one avenue for the formation of the stellar halo in addition to accretion of satellite galaxies; 
-and they motivate the mining of current and near future surveys to trace these oscillations across the Galaxy on global scales.
-Such maps could be used as dynamical diagnostics in the  emerging field of ''Galactoseismology'' which promises to probe ongoing interactions between the Milky Way and its entourage of satellites, as well examine the density of our dark matter halo.
-Moreover, as sensitivity to very low surface brightness features around external galaxies increases, it is likely that many more examples of such disk oscillations will be revealed, and the detailed understanding of Galactoseismology developed for the Milky Way could be applied as an additional avenue to  constrain galactic interaction rates and dark matter halo densities for samples that are statistically significant on cosmic scales.}
+they provide direct evidence for a stellar halo formation mechanism in addition to the accretion and disruption of satellite galaxies; and,
+they motivate searches of current and near-future surveys to trace these oscillations across the Galaxy.
+Such maps could be used as dynamical diagnostics in the emerging field of ``Galactoseismology,'' which promises to model the history of interactions between the Milky Way and its entourage of satellites, as well examine the density of our dark matter halo.
+As sensitivity to very low surface brightness features around external galaxies increases, many more examples of such disk oscillations will likely be identified.
+Statistical samples of such features not only encode detailed information about
+interaction rates and mergers, but also about long sought-after dark matter
+halo densities and shapes.
+Models for the Milky Way's own Galactoseismic history will therefore serve as a
+critical foundation for studying the weak interactions of galaxies across the
+universe.
+}
 
 % Keywords
 \keyword{galaxy formation; galactic disks; stellar halos; Milky Way.}
@@ -147,18 +157,19 @@ Moreover, as sensitivity to very low surface brightness features around external
 
 \section{Introduction}
 
-Our perspective on the Milky Way presents both unique challenges and unique opportunities  in contributing to our quest to understand galaxies more generally.
-Since we live inside it, it is the one galaxy in the Universe that we cannot take an image of but rather need to survey the entire sky in order to map its structure.
-On the other hand, it is one of the few galaxies that we can study star-by-star and is the only one we can hope to
+Our perspective on the Milky Way presents both unique challenges and unique opportunities towards our quest to understand galaxies more generally.
+From our position inside, it is the one galaxy in the Universe that we cannot take an image of but rather need to survey the entire sky in order to map its structure.
+On the other hand, it is one of the few galaxies that we can presently study by individual stars and is the only one for which we can hope to make volume-complete maps of full-space positions and velocities for significant numbers of unevolved stars.
+Present and recent sky surveys have already considerably advanced this effort, and near-future surveys will deliver massive datasets that will enable detailed studies of stellar structures throughout the Galactic volume.
 %move beyond co-ordinates restricted to random projections in a limited number of directions to
-make a map of in both the full three dimensions of space and the full three dimensions of motion.
 
-We are in the middle of a renaissance in Milky Way studies, fueled by stellar data sets of sufficient scope in terms of sky coverage and numbers to exploit our perspective as a strength rather than a liability
-%and take full advantage of our proximity
-to create vast catalogues of stellar data.
-The catalogues that inspired this renaissance emerged in the 1990's.
-They not only mapped global structures in our Galaxy, but also revealed the ubiquity of substructure within it, adding an unforseen richness to interpretations, and new dynamical tools for probing ongoing interactions and formation histories:
-HIPPARCOS \citep{esa97} found moving groups of stars in the velocity distribution in the Solar Neighborhood \citep{dehnen98}, some corresponding (as expected) to destroyed stars clusters, while others (unexpectedly) could plausibly be explained as signatures of resonances with the Galactic bar \citep{dehnen00};
+% We are in the middle of a renaissance in Milky Way studies, fueled by stellar data sets of sufficient scope in terms of sky coverage and numbers to exploit our perspective as a strength rather than a liability
+% %and take full advantage of our proximity
+% to create vast catalogues of stellar data.
+
+Emerging in the 1990's, the catalogues that inspired this recent acceleration not only mapped global structures in our Galaxy, but also revealed the ubiquity of substructure within it.
+These revelations added an unforeseen richness to interpretations, and encouraged the development of new dynamical tools for studying ongoing interactions and formation histories:
+\project{Hipparcos} \citep{esa97} found moving groups of stars in the velocity distribution in the Solar Neighborhood \citep{dehnen98}, some corresponding (as expected) to destroyed stars clusters, while others (unexpectedly) could plausibly be explained as signatures of resonances with the Galactic bar \citep{dehnen00};
 the Sloan Digital Sky Survey \citep[hereafter, SDSS ---][]{york00,stoughton02,abazajian03} found many streams of Main Sequence Turnoff (MSTO) stars in our stellar halo, thought to be from long-dead satellite galaxies \citep{newberg02,belokurov06} as a stunning confirmation that our Galaxy had indeed formed hierarchically \citep[e.g.][]{bullock01,bullock05};
 and M giant stars selected from the Two Micron All Sky Survey \citep[hereafter, 2MASS ---][]{nikolaev00} traced the debris from the Sagittarius dwarf galaxy entirely around the Sky \citep{majewski03} to offer a window on the history of its disruption \citep{law10}.
 
