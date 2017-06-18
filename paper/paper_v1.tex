@@ -1,6 +1,23 @@
 \documentclass[galaxies,article,submit,moreauthors,pdftex,10pt,a4paper]{mdpi}
 \bibliographystyle{newapa}
 
+\usepackage{microtype}  % ALWAYS!
+
+% -------------------
+% Some useful macros:
+% -------------------
+
+% Formatting:
+\newcommand{\project}[1]{\textsl{#1}}
+\newcommand{\survey}[1]{\textsl{#1}}
+\newcommand{\acronym}[1]{{\small{#1}}}
+\newcommand{\apogee}{\survey{\acronym{APOGEE}}}
+\newcommand{\sdssiii}{\survey{\acronym{SDSS-III}}}
+
+% Math:
+\newcommand{\msun}{\mathrm{M}_\odot}
+\newcommand{\kms}{\mathrm{km}~\mathrm{s}^{-1}}
+
 %--------------------
 % Class Options:
 %--------------------
@@ -53,7 +70,7 @@
 
 %=================================================================
 % Full title of the paper (Capitalized)
-\Title{Disk Heating, Galactoseismology and the Formation of Stellar Halos}
+\Title{Disk Heating, Galactoseismology, and the Formation of Stellar Halos}
 
 % If this is an expanded version of a conference paper, please cite it here: enter the full citation of your conference paper, and add $^\dagger$ in the end of the title of this article.
 %\conference{Title}
