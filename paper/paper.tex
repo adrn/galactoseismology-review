@@ -1,28 +1,11 @@
 \documentclass[galaxies,article,submit,moreauthors,pdftex,10pt,a4paper]{mdpi}
 
-% APW COMMENT: OMG I hate the formatting and math style of this journal, but I
-% guess we'll have to just roll with it...
-% KVJ: agreed
-% APW COMMENT: We might get into a battle over the Oxford comma again, but this
-% time you're in control!!
-% KVJ: OK
-
-% APW COMMENT: Stylistic comment: I don't like sentences like "\cite{...} found
-% that XX" or "As found in \cite{...}" -- my personal rule is that I should be
-% able to read the text if I deleted all of the \cite commands. So, I instead
-% prefer to write summary statements, and then use \cite{...} as the reference
-% at the end of a given statement. I tried to change instances I could found,
-% but that might be controversial and I hope I don't annoy you too much...
-% KVJ: sounds fine to me
-
-% APW COMMENT: We should mention Hercules-Aquila as a genuine "shell" candidate
-% since it does have RR Lyrae?
-% KVJ: Sure, but I'll leave you to figure out where and how....
+% TODO:
+% - Mention Hercules-Aquila somewhere as a genuine "shell" candidate
 
 \usepackage{amsmath}
 \usepackage{amssymb}
-%\usepackage{amsrefs}
-%\usepackage{aas_macros} % APW: I needed this for the references...
+\usepackage{aas_macros}
 
 % -------------------
 % Some useful macros:
@@ -41,8 +24,7 @@
 \newcommand{\kms}{\mathrm{km}~\mathrm{s}^{-1}}
 \newcommand{\frrmg}{\ensuremath{f_{\rm RR:MG}}}
 
-% APW COMMENT: TODO - need to get Maria's macro for \ion
-\newcommand{\ion}[1]{#1}
+\newcommand{\ion}[2]{#1\,\textsc{#2}}
 
 %--------------------
 % Class Options:
@@ -102,7 +84,7 @@
 %\conference{Title}
 
 % Authors, for the paper (add full first names)
-\Author{Kathryn V Johnston $^{1,\dagger}$, Adrian M Price-Whelan$^{2,\dagger}$, Maria Bergemann$^{3}$, Chervin Laporte$^{1}$, Ting S Li$^{4}$, Allyson A Sheffield$^{5}$, Branimir Sesar$^{3}$ and Sanjib Sharma $^{6,}$}
+\Author{Kathryn V. Johnston $^{1,\dagger}$, Adrian M. Price-Whelan$^{2,\dagger}$, Maria Bergemann$^{3}$, Chervin Laporte$^{1}$, Ting S. Li$^{4}$, Allyson A. Sheffield$^{5}$, Branimir Sesar$^{3}$, and Sanjib Sharma $^{6}$}
 % Rachel Beaton? Steve Majewski? Sanjib Sharma?
 
 % Authors, for metadata in PDF
@@ -356,7 +338,7 @@ velocities for these stars \cite{pricewhelan15}.
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=6 in]{figures/triand_rrlyrae}
+\includegraphics[width=5 in]{figures/triand_rrlyrae}
 \caption{\label{fig:apw}
 Comparison of the velocity distribution for M giants in the TriAnd structure
 (top panel) with velocities for RR Lyrae stars in the same region of sky and
@@ -408,7 +390,7 @@ For example, high-resolution spectra of 21 M giants in Mon/GASS \cite{chou2010b}
 
 In order to explore the apparent contradiction between the stellar populations and abundance work we have recently obtained high-resolution and signal-to-noise spectra of 15 stars in TriAnd 1 and A13 overdensities. 14 stars were observed with the HIRES-S spectrograph at the Keck-1 telescope \cite{vogt1994} and 1 star was observed using the the UVES spectrograph at the VLT (Program ID: 097.B-0770A).
 %The spectral resolving power R of the HIRES spectra is 36\,000 and the UVES data have R $\sim$ 47\,000. All Keck spectra cover the full optical region, from $4800$ to $8770$ $\AA$, although the exact wavelength coverage varies as several slightly different instrument configurations were tried in an effort to get all the key lines into a single exposure. The signal-to-noise (SNR)/\AA of the HIRES spectra near 5200 \AA in the continuum at the center of the echelle order exceeds 200. For the UVES spectrum, the SNR of 50 near 5500 \AA was achieved. The fundamental parameters and chemical abundances of stars were determined using 2MASS and APASS photometry and the high-resolution spectra. All 15 stars are M-type giants with effective temperatures Teff ~ 3800 K and surface gravities log(g) ~ 1 dex. The $T_{\rm eff}$ estimates were derived using the Infrared Flux Method (Casagrande et al. 2010, 2014). Chemical abundances were measured for 6 chemical elements, including O, Na, Mg, Ca, Fe, Eu using LTE and the standard MARCS stellar model atmospheres (Gustafsson et al. 2008). We have also performed detailed analysis of the effects of non-local thermodynamic equilibrium (non-LTE) for the elements, where detailed calculations are available \cite{bergemann2011, bergemann2012, bergemann2016}, however, the NLTE corrections for the chosen lines are minor and do not change our conclusions. In what follows, we use our LTE results, because all studies of chemical abundances in dSph systems and most studies in the Milky Way to date have employed LTE with 1D hydrostatic models
-We find that stars in the TriAnd 1 and in A13 overdensities have extremely similar chemical abundances, with the abundance dispersion $\leq 0.06$ dex for most chemical elements. The TriAnd 1 and A13 stars also have a very narrow metallicity spread,  ${\rm [Fe/H]} = -0.92 \pm 0.06$ dex. The abundances of all measured alpha-elements are uniformly enhanced at the level of 0.43 $\sim$ 0.06 dex for [O/Fe], 0.41 $\sim$ 0.02 dex for [Mg/Fe], $0.35 \pm 0.06$ dex for [Na/Fe], and 0.15 $\sim$ 0.03 dex for [Eu/Fe]. At this level, the TriAnd 1 and A13 stars are consistent with the abundances of the in-situ formed Milky Way thick disk stars \cite{fuhrmann2002,bergemann2014,bensby2014}.
+We find that stars in the TriAnd 1 and in A13 overdensities have extremely similar chemical abundances, with the abundance dispersion $\leq 0.06$ dex for most chemical elements. The TriAnd 1 and A13 stars also have a very narrow metallicity spread,  ${\rm [Fe/H]} = -0.92 \pm 0.06$ dex. The abundances of all measured alpha-elements are uniformly enhanced at the level of 0.43 $\sim$ 0.06 dex for [O/Fe], 0.41 $\sim$ 0.02 dex for [Mg/Fe], $0.35 \pm 0.06$ dex for [Na/Fe], and 0.15 $\sim$ 0.03 dex for [Eu/Fe]. At this level, the TriAnd 1 and A13 stars are consistent with the abundances of the in-situ formed Milky Way thick disk stars \cite{fuhrmann2004,bergemann2014,bensby2014}.
 \footnote{The only exception is [Ca/Fe], which is consistent with solar with the dispersion of 0.06 dex; however, the NLTE abundance correction for the \ion{Ca}{i} lines for M giants is 0.1 dex that will bring the results in agreement with the MW disk studies that are based on FGK dwarfs, for which the NLTE correction is much smaller \cite{Merle2011}}.
 The abundance ratios are too high for the chemical abundance patterns observed in the stars of the Galactic satellites (Bonifacio et al. 2010, Shetrone et al. 2001, 2003, Tolstoy et al. 2009, de Boer et al. 2014), which are known to have low, typically solar ( [O/Fe], [Mg/Fe]) or even sub-solar ([Na/Fe]), ratios at [Fe/H] $\sim -1$.
 % APW COMMENT: there are hand-typed references in the paragraph above! We need to add to the bibliography
@@ -480,14 +462,11 @@ The observations summarized in Section \ref{sec:obs} indicate that:
 
 \begin{figure}[t]
 \centering
-%\includegraphics[width=3 cm]{logo-mdpi}
+\includegraphics[width=4 in]{figures/cartoon.pdf}
 \caption{\label{fig:cartoon}
-Cartoon of oscillations in space and velocity}
+TODO: Cartoon of oscillations in space and velocity}
 \end{figure}
 
-% APW COMMENT: I actually now somewhat disagree with my own cartoon. I will
-% think about making a new one that better represents my beliefs about the
-% structures. I can also then update this text -- more on that soon!
 Figure \ref{fig:cartoon} is a cartoon which summarizes all the observational works and their implications, by showing the approximate locations and amplitudes of the spatial and velocity structures that have been identified. (Note that the figure is misleading as the structures are {\it not} consistent morphologically with concentric rings that are axisymmetric about the Galactic center.)
 Taken together, we conclude that: (i) there is compelling evidence that Mon/GASS, TriAnd 1/2 and A13 represent populations of stars formed in the disk that now exist at extreme $(R,Z)$;
 (ii) these structures are associated with each other as part of a global system of vertical disk oscillations that can be traced all the way to the velocity asymmetries seen in the Solar Neighborhood; and
@@ -529,7 +508,7 @@ If similar measurements of proper motions of stars in all the low-latitude struc
 In near-future data-releases, ESA's {\it Gaia} satellite \cite{???} is poised to provide just such proper motion data --- with proper motion accuracies of ??? $\mu$as/year or ?? km/s for our (closest) ??? mag M giant stars in Mon/GASS and ??? $\mu$as/year or ?? km/s for our (farthest) ??? mag M giant stars in TriAnd.
 
 The second direction is to extend the various maps to to fainter magnitudes and global scales. Again, {\it Gaia} will be able to tackle this with distances, proper motions and radial velocities, although its reach towards low latitudes in the inner Galaxy will be limited by extinction.
-Infrared surveys, such as APOGEE \cite{}, could overcome this limitation and reach entirely across the Galaxy. Spectra from such a survey could provide both motions and abundance patterns.
+Infrared surveys, such as APOGEE \cite{apogee}, could overcome this limitation and reach entirely across the Galaxy. Spectra from such a survey could provide both motions and abundance patterns.
 
 \subsection{Other Galaxies}
 
@@ -540,7 +519,7 @@ $\Sigma <$32 mag/arcsec$^2$ \cite{majewski04}.
 
 The growing samples of galaxies within and beyond the Local Group being mapped to extremely low surface brightness levels are intriguing.
 Nearby, these can be reached, like the Milky Way, through star counts studies, most spectacularly for the case of our nearest neighbor, the Andromeda Galaxy, where giant star counts have revealed a significantly extended and richly featured outer stellar disk \cite{ferguson02,ibata05}.
-Analogous studies have been carried out for galaxies up to distances of several Mpc \cite[e.g. ][]{monachesi13,crnojevi16}, although the focus of these studies has typically been on detecting the stellar halo of these objects.
+Analogous studies have been carried out for galaxies up to distances of several Mpc \cite[e.g.,][]{monachesi13,crnojevi16}, although the focus of these studies has typically been on detecting the stellar halo of these objects.
 Several dedicated surveys have made innovative advances in studying galaxies to LSB using a variety of techniques to reach limits below 30  mag/arcsec$^2$ in integrated light \citep[e.g.][]{delgado10,vandokkum14,duc15}.
 
 Looking to the future,
@@ -631,10 +610,11 @@ K.V.J. was supported by NSF grant AST-1614743 while writing the review.}
 %=====================================
 % References, variant A: internal bibliography
 %=====================================
+\externalbibliography{yes}
 % \bibliographystyle{chicago2}
-%\bibliography{refs_1.bib,refs_2.bib,refs_3.bib,refs_apw}
+\bibliography{refs}
 
-\input{refs.tex}
+% \input{refs.tex}
 %\begin{thebibliography}{999}
 % Reference 1
 %\bibitem[Author1(year)]{ref-journal}
