@@ -1,18 +1,18 @@
 # LATEX       = pdflatex -interaction=nonstopmode -halt-on-error
-LATEX       = pdflatex -interaction=nonstopmode
+LATEX       = pdflatex
 BASH        = bash -c
 ECHO        = echo
 RM          = rm -rf
 TMP_SUFFS   = pdf aux bbl blg log dvi ps eps out brf
 CHECK_RERUN =
 
-NAME = paper_v1
+NAME = paper
 
 all: ${NAME}.pdf
 
-${NAME}.pdf: ${NAME}.tex *.bib
+${NAME}.pdf: ${NAME}.tex refs.tex *.bib
 	${LATEX} ${NAME}
-	bibtex ${NAME}
+	# bibtex ${NAME}
 	${LATEX} ${NAME}
 	( grep "Rerun to get" ${NAME}.log && ${LATEX} ${NAME} ) || echo "Done."
 	( grep "Rerun to get" ${NAME}.log && ${LATEX} ${NAME} ) || echo "Done."
