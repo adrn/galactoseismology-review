@@ -17,6 +17,7 @@
 \newcommand{\acronym}[1]{{\small{#1}}}
 \newcommand{\apogee}{\survey{\acronym{APOGEE}}}
 \newcommand{\sdssiii}{\survey{\acronym{SDSS-III}}}
+\newcommand{\documentname}{\emph{Article}}
 
 % Math:
 \newcommand{\kpc}{\mathrm{kpc}}
@@ -116,7 +117,7 @@ $^{6}$ \quad Sydney Institute for Astronomy, School of Physics, University of Sy
 %A single paragraph of about 200 words maximum. 1) Background: Place the question addressed in a broad context and highlight the purpose of the study; 2) Methods: Describe briefly the main methods or treatments applied; 3) Results: Summarize the article's main findings; and 4) Conclusion: Indicate the main conclusions or interpretations. The abstract should be an objective representation of the article, it must not contain results which are not presented and substantiated in the main text and should not exaggerate the main conclusions.
 Deep photometric surveys of the Milky Way have revealed diffuse structures
 encircling our Galaxy far beyond the ``classical'' end of the stellar disk.
-This article reviews results from our own and other observational programs, which together suggest that, despite their extreme positions, the stars in these structures were formed in our Galactic disk.
+This \documentname\ reviews results from our own and other observational programs, which together suggest that, despite their extreme positions, the stars in these structures were formed in our Galactic disk.
 Mounting evidence from recent observations and simulations implies kinematic connections between several of these distinct structures.
 This suggests the existence of collective disk oscillations that can plausibly be traced all the way to asymmetries seen in the stellar velocity distribution around the Sun.
 There are multiple interesting implications of these findings:
@@ -180,19 +181,30 @@ Present and recent sky surveys have already considerably advanced this effort, a
 % to create vast catalogues of stellar data.
 
 Emerging in the 1990's, the catalogues that inspired this recent acceleration not only mapped global structures in our Galaxy, but also revealed the ubiquity of substructure within it.
-These revelations added an unforeseen richness to interpretations, and encouraged the development of new dynamical tools for studying ongoing interactions and formation histories:
-\survey{Hipparcos} \cite{esa97} found moving groups of stars in the velocity distribution in the Solar Neighborhood \cite{dehnen98}, some corresponding (as expected) to destroyed stars clusters, while others (unexpectedly) could plausibly be explained as signatures of resonances with the Galactic bar \cite{dehnen00};
-the Sloan Digital Sky Survey \cite[hereafter, SDSS ---][]{york00,stoughton02,abazajian03} found many streams of Main Sequence Turnoff (MSTO) stars in our stellar halo, thought to be from long-dead satellite galaxies and dissolved globular clusters \cite{newberg02,belokurov06} as a stunning confirmation that our Galaxy had indeed formed hierarchically \cite[e.g.][]{bullock01,bullock05};
-and M giant stars selected from the Two Micron All Sky Survey \cite[hereafter, 2MASS ---][]{nikolaev00} traced the debris from the Sagittarius dwarf galaxy entirely around the Sky \cite{majewski03} to offer a window on the history of its disruption \cite{law10}.
-From these and many other studies that use large survey catalogues, it is now clear that the Milky Way is full of kinematic substructure.
-
-% APW COMMENT: this section makes it sound like the surveys discovered these
-% things "for free," but really it was the authors you cite who found these
-% things. I would rearrange to say, e.g., "Using data from the
-% \survey{Hipparcos} mission \cite{esa97}, moving groups of stars were found
-% in the velocity distribution in the Solar Neighborhood
-% \cite{dehnen98}...etc"
-% KVJ: will get to if there is time
+These revelations added an unforeseen richness to interpretations and encouraged the development of new dynamical tools for studying ongoing interactions and formation histories.
+As a few examples:
+\begin{itemize}
+    \item Astrometric data from the \survey{Hipparcos} mission \cite{esa97} led
+        to the discovery of moving groups of stars in the velocity distribution
+        of solar-neighborhood stars \cite{dehnen98}. Some of these likely
+        correspond to destroyed star clusters (as expected), while others
+        (unexpectedly) have been interpreted as signatures of resonances with
+        the Galactic bar \cite{dehnen00}.
+    \item Precise, large-area photometry from the Sloan Digital Sky Survey
+        \cite[hereafter, SDSS ---][]{york00,stoughton02,abazajian03} led to the
+        discovery of many ``streams'' of Main Sequence Turnoff (MSTO) stars in
+        the Galactic stellar halo. These are understood to be the remnants of
+        long-dead satellite galaxies and dissolved globular clusters
+        \cite{newberg02,belokurov06} and serve as a stunning confirmation that
+        our Galaxy had indeed formed hierarchically
+        \cite[e.g.,][]{bullock01,bullock05}.
+    \item All-sky, infrared photometry from the Two Micron All Sky Survey
+        \cite[hereafter, 2MASS ---][]{nikolaev00} enabled tracing M giant stars
+        associated with tidal debris from the Sagittarius dwarf galaxy around
+        the entire Sky \cite{majewski03}, offering a new perspective on the
+        history of its disruption \cite{law10}.
+\end{itemize}
+From these and many other studies that use large survey catalogues, it is now clear that the Milky Way is full of kinematic substructure, from the nearby regions of the Galactic disk to the distant stellar halo.
 
 \begin{figure}[!ht]
 \label{fig:ting}
@@ -216,43 +228,73 @@ The position of the sun is marked with the solar symbol $\odot$.
 }
 \end{figure}
 
-Figure~\ref{fig:ting}, reproduced from \cite{li17}, shows the spatial distribution of M giant stars associated with three such substructures that this paper concentrates on: the so-called Monoceros Ring, Triangulum-Andromeda clouds, and A13.
-Each of these substructures were originally identified using SDSS and 2MASS photometry as over-densities in stellar number counts relative to the expected global structure of the disk or inner stellar halo.\footnote{Note that the same region on the sky has been shown to be richly structured on even smaller scales\cite{slater14,martin14,deason14} but we do not discuss these sub-substructures here.}
-Unlike stellar streams, these substructures are present at a range of low to moderate Galactic latitudes --- we will hereafter refer to them collectively as the ``low-latitude structures''.
-The following is a brief  summary of the discovery and initial follow-up papers that outlined their basic properties.
+The focus of this \documentname\ is on three such substructures just beyond the
+historical ``end'' of the Galactic disk within the inner stellar halo.
+Figure~\ref{fig:ting} \cite[reproduced with data from][]{li17}, shows the
+spatial distribution of M giant stars associated with these three
+substructures: the so-called Monoceros Ring (Mon; also known as the Giant
+Anticenter Stellar Structure, GASS), the Triangulum-Andromeda clouds (TriAnd),
+and A13.
+Each of these substructures were originally identified as over-densities in
+stellar number counts relative to the expected global structure of the disk or
+inner stellar halo.\footnote{Here we show just M giant stars that have been
+previously identified as candidate members of the structures, however, some of
+the structures have also been detected in MSTO stars.}
+The same region of the sky has been shown to be richly structured on even
+smaller scales \cite{slater14,martin14,deason14}, but here we consider only the
+larger structures.
+Unlike most stellar streams, Mon/GASS, TriAnd, and A13 are present at a range
+of low to moderate Galactic latitudes and span large areas of the sky --- we
+will hereafter refer to them collectively as the ``low-latitude structures''.
+The basic properties of the low-latitude structures are summarized below:
 \begin{description}
-\item{\it The Monoceros Ring or Giant Anticenter Stellar Structure} (hereafter Mon/GASS) is an arc- or ring-like feature of stars beyond the expected edge of the Galactic disk \cite[assumed to be $\approx 5~\kpc$ beyond the Sun in cylindrical radius ---][]{robin92}.
-The feature spans a large area: Galactic longitudes $\approx 120^\circ \lesssim l \lesssim 240^\circ$, latitudes $-30^\circ \lesssim b \lesssim +40^\circ$, and Heliocentric distances $5\lesssim d_\odot \lesssim 10~\kpc$ (\cite{Morganson:2016}).
-Mon/GASS was originally found as an excess of main sequence stars in SDSS \cite{yanny03,ibata03} and M giant stars in 2MASS \cite{rochapinto03}.
-Follow-up spectra of the M giant stars indicate that they follow a clear trend in mean velocity with Galactic longitude with small dispersion \cite{crane03}.
-\item{\it The Triangulum-Andromeda Clouds} (hereafter TriAnd 1 and TriAnd 2) were first discovered as a single diffuse over-density of M giant stars covering the area $\approx 100^\circ \lesssim l \lesssim 150^\circ$, $\approx 20^\circ \lesssim b \lesssim 40^\circ$ overlapping the Mon/GASS structure on the sky but at larger Heliocentric distances of approximately $15$--$30~\kpc$ \cite{rochapinto04}.
-Follow-up spectroscopy showed that the M giants exhibit a coherent velocity sequence with a small dispersion \cite{rochapinto04} and later deep photometry in the region revealed associated MSTO stars and an estimate of the surface brightness of the feature $\Sigma > 32~{\rm mag}~{\rm arcsec}^{-2}$ \cite{majewski04}.
-Subsequent photometric work also revealed the presence of {\it two} distinct main sequences \cite{martin07}.
-\item{\it A13} is another tenuous association of stars discovered by applying a group finding algorithm \cite{sharma09} to the catalogue of all 2MASS M giants \cite{sharma10}.
-This group sits in the north Galactic hemisphere in the area $\approx 125^\circ
-\lesssim l \lesssim 210^\circ$, $\approx 20^\circ \lesssim b \lesssim 40^\circ$
-and at approximate distances of $\approx 12$--$20~\kpc$.
-Follow-up spectroscopy again showed that the M giants in this structure have a
-small velocity dispersion around a roughly linear trend with Galactic longitude
-\cite{li17}
+\item{\it Mon/GASS} is an arc-like or partial-ring feature of stars beyond the previously-expected edge of the Galactic disk, $\approx 5~\kpc$ beyond the Sun in cylindrical radius \cite{robin92}.
+Stars attributed to this feature span a large area of the sky and large range
+in distance: Galactic longitudes $\approx 120^\circ \lesssim l \lesssim
+240^\circ$, latitudes $-30^\circ \lesssim b \lesssim +40^\circ$, and
+Heliocentric distances $5\lesssim d_\odot \lesssim 10~\kpc$
+\cite{Morganson:2016}.
+Radial velocity measurements of M giant stars associated with the structure
+follow a clear trend in mean velocity with Galactic longitude and have a
+velocity dispersion much smaller than the stellar halo \cite{crane03}.
+\item{\it TriAnd} was first discovered as a diffuse over-density of M giant
+stars covering the area $\approx 100^\circ \lesssim l \lesssim 150^\circ$,
+$\approx 20^\circ \lesssim b \lesssim 40^\circ$, overlapping the Mon/GASS
+structure on the sky but at larger Heliocentric distances of $\approx
+15$--$25~\kpc$ \cite{rochapinto04}.
+The M giants again exhibit a coherent radial-velocity sequence with a
+dispersion much smaller than the halo \cite{rochapinto04}.
+Deep photometry in the region revealed MSTO stars associated with the structure
+and proposed the existence of a second main sequence (``TriAnd 2'') at larger
+distance, $\approx 30$--$35~\kpc$ \cite{martin07,martin14}.
+\item{\it A13} is another tenuous association of M giants in the north Galactic
+hemisphere in the area $\approx 125^\circ \lesssim l \lesssim 210^\circ$,
+$\approx 20^\circ \lesssim b \lesssim 40^\circ$ at approximate distances of
+$\approx 12$--$20~\kpc$.
+It was initially discovered by applying a group finding algorithm
+\cite{sharma09} to all M giants in the 2MASS photometric catalogue
+\cite{sharma10}.
+Again, radial velocities of M giants in this structure have a small velocity
+dispersion around a roughly linear trend with Galactic longitude \cite{li17}
 \end{description}
-We note that (1) these structures likely continue towards lower Galactic
-latitudes ($b < 20^\circ$) but are incomplete due to Galactic extinction near
-the midplane, and (2) each structure in reality has a longitude-dependent
-distance that is ignored in the quoted distance ranges above.
-Many models have been proposed to explain the formation and existence of these
-substructures.
-Mon/GASS has been attributed to the accretion of a satellite on a retrograde orbit \cite{penarrubia05}, a natural extension of the Galactic warp \cite{momany04,momany06}, or disturbances to the Galactic disk \cite{kazantzidis08,younger08,purcell11,xu15,gomez16}.
-For the TriAnd clouds, their extreme positions at $(R,Z) \approx (20, -8)~\kpc$ and $(R,Z) \approx (25, -10)~\kpc$,
-%and $(R,Z) \approx (20, 8)~\kpc$
-(across a large range in Galactocentric azimuth, $\phi$) seems to exclude a disturbed disk as a possible origin in these cases and a satellite on a retrograde orbit has again been shown to provide a plausible explanation of their structure \cite{sheffield14}.
-Indeed, preliminary abundance studies show [$\alpha$/Fe] values for member M giants of both Mon/GASS and the TriAnd Clouds reminiscent of stars in Galactic satellites and unlike the disk \cite{chou2010b,chou11} --- see Section \ref{sec:abundances} for a more complete discussion.
 
-A more convincing, coherent picture of the nature of these low-latitude structures is just beginning to emerge.
-This paper reviews the contributions our own group has made to formulating this picture, which include spectroscopic surveys of the low-latitude structures to study metallicity and velocities \cite{sheffield14,li17}, stellar populations \cite{pricewhelan15}, and abundance patterns (paper currently in preparation, Bergemann et al 2017), as well as numerical simulations \cite{sheffield14,laporte16}.
+Several distinct scenarios have been used to explain the formation and
+existence of each of these structures.
+Mon/GASS has been attributed to the accretion of a satellite on a retrograde orbit \cite{penarrubia05}, a natural extension of the Galactic warp \cite{momany04,momany06}, or disturbances to the Galactic disk \cite{kazantzidis08,younger08,purcell11,xu15,gomez16}.
+The extreme position of TriAnd at $(R,Z) \approx (15, -5)$ to $(25,-12)~\kpc$
+across a large range in Galactocentric azimuth, $\phi$, seemed to exclude the
+possibility of a disturbed Galactic disk as a possible origin and has also been
+modeled as debris from a satellite on a retrograde orbit \cite{sheffield14}.
+Initial abundance studies measured $[\alpha/{\rm Fe}]$ values for M giants in both Mon/GASS and TriAnd and found them to be consistent with those seen in Milky Way satellite galaxies, thus unlike the disk \cite{chou2010b,chou11} --- see Section~\ref{sec:abundances} for a more complete discussion.
+
+Recent evidence points towards a more convincing, coherent picture for the
+nature of the three low-latitude structures: the stars in these structures
+likely have a common origin in the Galactic disk and have been ``kicked out''
+to their present-day positions.
+This \documentname\ reviews contributions that our own group has made to formulating this picture, which include spectroscopic surveys of the low-latitude structures to study metallicities and kinematic properties \cite{sheffield14,li17}, stellar populations \cite{pricewhelan15}, and detailed abundance patterns (Bergemann et al., in prep.), as well as numerical simulations \cite{sheffield14,pricewhelan15,laporte16}.
 We summarize this observational and theoretical work in Section 2 and 3 respectively, adding in the context of contemporary work from other groups, as well as the larger context of possible connections across the Galactic disk.
 Armed with this understanding of the nature of these substructures, we go on in Section 4 to discuss prospects for mapping such structures more generally around our own and other Galaxies.
-We end in Section 5 by outlining the motivation for making such maps, asking what they might be telling us about bigger questions: galaxy formation scenarios and dark matter distributions.
+We end in Section 5 by outlining the motivation for making such maps, asking what they might be telling us about bigger questions: galaxy formation scenarios and the distribution of dark matter around galaxies.
 
 % APW COMMENT: I'm not sure about the subsection grouping below.  I'm wondering
 % if there is another way to reorganize...Perhaps subsections for name of
@@ -628,3 +670,10 @@ K.V.J. was supported by NSF grant AST-1614743 while writing the review.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
 
+% APW TODO:
+% We note that (1) these structures likely continue towards lower Galactic
+% latitudes ($b < 20^\circ$) but are incomplete due to Galactic extinction near
+% the midplane, and (2) each structure in reality has a longitude-dependent
+% distance that is ignored in the quoted distance ranges above.
+% Many models have been proposed to explain the formation and existence of these
+% substructures.
