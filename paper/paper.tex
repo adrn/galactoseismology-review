@@ -25,6 +25,7 @@
 \newcommand{\kms}{\mathrm{km}~\mathrm{s}^{-1}}
 \newcommand{\frrmg}{\ensuremath{f_{\rm RR:MG}}}
 
+\newcommand{\feh}{\ensuremath{[{\rm Fe}/{\rm H}]}}
 \newcommand{\ion}[2]{#1\,\textsc{#2}}
 
 %--------------------
@@ -280,12 +281,18 @@ dispersion around a roughly linear trend with Galactic longitude \cite{li17}
 
 Several distinct scenarios have been used to explain the formation and
 existence of each of these structures.
-Mon/GASS has been attributed to the accretion of a satellite on a retrograde orbit \cite{penarrubia05}, a natural extension of the Galactic warp \cite{momany04,momany06}, or disturbances to the Galactic disk \cite{kazantzidis08,younger08,purcell11,xu15,gomez16}.
+Mon/GASS has been attributed to the accretion of a satellite on a retrograde
+orbit \cite{penarrubia05}, a natural extension of the Galactic warp
+\cite{momany04,momany06}, or disturbances to the Galactic disk
+\cite{kazantzidis08,younger08,purcell11,xu15,gomez16}.
 The extreme position of TriAnd at $(R,Z) \approx (15, -5)$ to $(25,-12)~\kpc$
 across a large range in Galactocentric azimuth, $\phi$, seemed to exclude the
 possibility of a disturbed Galactic disk as a possible origin and has also been
 modeled as debris from a satellite on a retrograde orbit \cite{sheffield14}.
-Initial abundance studies measured $[\alpha/{\rm Fe}]$ values for M giants in both Mon/GASS and TriAnd and found them to be consistent with those seen in Milky Way satellite galaxies, thus unlike the disk \cite{chou2010b,chou11} --- see Section~\ref{sec:abundances} for a more complete discussion.
+Initial abundance studies measured $[\alpha/{\rm Fe}]$ values for M giants in
+both Mon/GASS and TriAnd and found them to be consistent with those seen in
+Milky Way satellite galaxies, thus unlike the disk \cite{chou2010b,chou11} ---
+see Section~\ref{sec:abundances} for a more complete discussion.
 
 Recent evidence points towards a more convincing, coherent picture for the
 nature of the three low-latitude structures: the stars in these structures
@@ -296,29 +303,29 @@ We summarize this observational and theoretical work in Section 2 and 3 respecti
 Armed with this understanding of the nature of these substructures, we go on in Section 4 to discuss prospects for mapping such structures more generally around our own and other Galaxies.
 We end in Section 5 by outlining the motivation for making such maps, asking what they might be telling us about bigger questions: galaxy formation scenarios and the distribution of dark matter around galaxies.
 
-% APW COMMENT: I'm not sure about the subsection grouping below.  I'm wondering
-% if there is another way to reorganize...Perhaps subsections for name of
-% structure, subsubsections for "observational follow-up", "theoretical
-% understanding", "future work needed"? i.e. take the transpose of what is here
-% now, if you know what I mean.
-% KVJ: not _sure_ I agree and no time to implement
-
 \section{The Nature of Structures Around the Outer Disk --- Summary of Observations}
 \label{sec:obs}
 
-\subsection{Spectroscopic surveys}
-
 From clustering in positions or distance alone, many candidate groups and
-over-densities of M giants have been identified in the outer disk / inner halo.
-Over the last five years our group has pursued a spectroscopic campaign to
-follow up members of these candidate structure with the aims of (1) confirming
-the existence of substructure in velocities, (2) measuring chemical abundances,
-and (3) studying the constituent stellar populations.
+over-densities of M giants have been identified in the outer disk or inner halo.
+Over the last five years our group has obtained spectroscopy for
+candidate members of these structures with the aims of (1) confirming the
+existence of substructure in velocities, (2) measuring chemical abundances, and
+(3) studying the constituent stellar populations.
 These goals then inform our own efforts to produce plausible dynamical
 formation scenarios using simulations.
-In particular, we {\it avoid} the collimated stellar streams that have been well-studied in prior work \cite[such as Sgr, Orphan, GD1 and Pal 5 --- see, e.g.,][]{law10,koposov10,kuepper15,bovy16}
-and instead focus on groups that appear as diffuse, amorphous, extended stellar structures such as TriAnd \cite{rochapinto04} and A13 \cite{sharma10}.
-Initial interpretations of these morphologies suggested the structures could be {\it shells} --- debris from the disruption of satellite galaxies on near-radial orbits \cite{johnston08} --- as seen from an internal perspective.
+In particular, we {\it avoid} the collimated stellar streams that have been
+well-studied in prior work \cite[such as Sgr, Orphan, GD1 and Pal 5 --- see,
+e.g.,][]{law10,koposov10,kuepper15,bovy16} and instead focus on groups that
+appear as diffuse, amorphous, extended stellar structures such as TriAnd, A13,
+and Mon/GASS.
+Initial interpretations of these morphologies suggested the structures could be
+{\it shells} --- debris from the disruption of satellite galaxies on near-radial
+orbits \cite{johnston08} --- as seen from an internal perspective.
+However, our own and other recent observations instead suggest a common origin
+within the Galactic disk for stars associated with the low-latitude structures.
+
+\subsection{Low-resolution Spectroscopy: Metallicities and Radial Velocities}
 
 In our first results, we extended a prior sample of TriAnd M giants
 \cite{rochapinto04} by obtaining spectra of all candidate M giants identified
@@ -328,15 +335,16 @@ We identified M giants associated with the two proposed MSTO TriAnd structures
 \cite[TriAnd 1 and 2, as named by][]{martin07,martin14}.
 M giant stars in both TriAnd 1 and 2 form clear over-densities in radial
 velocities with a small dispersion, $\sigma_v \approx 25~\kms$, compared to the
-background halo velocity distribution, $\sigma_v \approx 100~\kms$.
+background halo velocity distribution.
 The radial velocities of M giants in both TriAnd 1 and 2 follow the same
-sequence in velocity with a steady gradient of mean Galactic standard-of-rest
-(GSR) radial velocity ($v_{\rm GSR}$) from positive to negative $v_{\rm GSR}$
-with increasing Galactic longitude, $l$.
-We presented a model that simultaneously and approximately reproduces TriAnd 1
-and 2 as tidal debris stripped over two separate pericentric passages from a
-single accreted satellite on a low-eccentricity, retrograde, near-planar orbit.
-The debris structures in the simulations were morphologically closer to {\it
+sequence in velocity with a steady negative gradient of mean Galactic
+standard-of-rest (GSR) radial velocity ($v_{\rm GSR}$) with increasing Galactic
+longitude, $l$; see Figures~\ref{fig:ting_vel}--\ref{fig:apw}, purple triangles.
+We initially presented a dynamical model that simultaneously and approximately
+reproduces TriAnd 1 and 2 as tidal debris stripped over two separate pericentric
+passages from a single accreted satellite on a low-eccentricity, retrograde,
+near-planar orbit.
+The debris structures in the simulation were morphologically closer to {\it
 streams} rather than {\it shells}, but still subtended large areas on the sky
 as observed from the Sun's position.
 We note, however, that because of large distance uncertainties, the M giants in
@@ -353,7 +361,14 @@ the other end, but is apparent in the Northern Galactic hemisphere at slightly
 brighter magnitudes than TriAnd.
 The spectra show that, like the TriAnd clouds, this group has a
 coherent velocity structure with low dispersion and a steady gradient with
-longitude, $l$, confirming the genuine association of its members \cite{li17}.
+longitude, $l$, confirming the genuine association of its members \cite{li17};
+see Figure~\ref{fig:ting_vel}, orange squares.
+
+Low-resolution spectroscopy has also been obtained for a sample of M giant stars
+that span $\approx 100^\circ$ of the Mon/GASS structure \cite{crane03}.
+The candidate Mon/GASS member M giants also show a clear trend in GSR velocity
+with Galactic longitude, and appear to form a coherent sequence with both A13
+and TriAnd; see Figure~\ref{fig:ting_vel}, green circles.
 
 \begin{figure}[!ht]
 \centering
@@ -371,27 +386,29 @@ sizes.
 }
 \end{figure}
 
-
-% APW COMMENT: left off here, but no mention of GASS above - figure shows all 3
-% structures. Should reference Crane et al. study of GASS?
-
-Figure~\ref{fig:ting_vel} \cite[reproduced with data from previous work,][]{li17}, summarizes the line-of-sight (GSR) velocity trends of M giants in each of the three low-latitude structures.
+As mentioned above, Figure~\ref{fig:ting_vel} \cite[reproduced with data from
+previous work,][]{li17}, summarizes the line-of-sight (GSR) velocity trends of M
+giants in each of the three low-latitude structures.
 Not only do these groups all have low dispersions relative to the stellar halo
---- which confirms  groups themselves as real --- they also
-appear to {\it collectively} exhibit a continuous gradient with Galactic longitude,
-$l$.
-This latter finding suggests that the groups may also be associated with each other.
+--- which suggests that the groups themselves are real --- they also appear to
+{\it collectively} exhibit a continuous gradient with Galactic longitude, $l$.
+This suggests that the groups may also be associated with one another, or part
+of a larger structure of the outer Galactic disk.
 
 %{\it Summary: the low latitude structures each have low velocity dispersions supporting the genuine association of the stars within them; they also form velocity sequences as functions of Galactic longitude that are continuous across the groups.}
 
-\subsection{Stellar Populations}
+\subsection{Stellar Populations and Other Kinematic Tracers}
  \label{sec:populations}
-Motivated by the observed, low-dispersion velocity distribution of the M giant stars in TriAnd, we sought to observe other distance tracer stars --- RR Lyrae-type pulsators --- in the region, determine their membership, and improve the distance estimates to the structure.
-We selected RR Lyrae stars in the TriAnd region from the Palomar Transient
-Factory \cite[PTF][]{ptf}, using a conservative distance cut to account for
-uncertainties in the RR Lyrae and M giant photometric distance estimates.
+Motivated by the observed, low-dispersion velocity distribution of the M giant
+stars in TriAnd, we sought to observe other distance tracer stars in the same
+region, determine their membership, and improve the distance estimates to the
+structure.
+We focused on and selected RR Lyrae stars in the TriAnd region from the Palomar
+Transient Factory \cite[PTF;][]{ptf}, using a conservative distance cut to
+account for uncertainties in the RR Lyrae and M giant photometric distance
+estimates, $15~\kpc < d_\odot < 35~\kpc$.
 We obtained spectra for $\approx$1/3 of the total number of RR Lyrae in the M
-giant volume considered to be associated with TriAnd 1 and measured radial
+giant volume considered to be associated with TriAnd and measured radial
 velocities for these stars \cite{pricewhelan15}.
 
 \begin{figure}[t]
@@ -399,14 +416,25 @@ velocities for these stars \cite{pricewhelan15}.
 \includegraphics[width=5 in]{figures/triand_rrlyrae}
 \caption{\label{fig:apw}
 Comparison of the velocity distribution for M giants in the TriAnd structure
-(top panel) with velocities for RR Lyrae stars in the same region of sky and
-distance range (bottom panel).
+(purple triangles) with velocities for RR Lyrae stars in the same region of sky
+and distance range (blue circles).
+Radial velocity uncertainties of the M giant stars are typically the size of the
+marker or smaller.
+Uncertainties for the RR Lyrae stars are shown with gray error bars.
+Note the low-dispersion sequence in the M giant velocities, unseen in the RR
+Lyrae star velocities, which look like typical halo stars with a large
+velocity dispersion.
 }
 \end{figure}
 
-Figure~\ref{fig:apw} \cite[reproduced from][]{pricewhelan15} shows the results of our survey: unlike the M giants (gray points) the RR Lyrae (black points) show no clear, tight velocity sequence.
-By modeling both the RR Lyrae and M giants velocity data as mixtures of two gaussians representing a cold foreground sequence and a possible background halo population of larger dispersion, we were able to show that the number ratio of RR Lyrae to M giants (\frrmg) within the overdensity was $<0.38$ with 95\% confidence.
-
+Figure~\ref{fig:apw} \cite[reproduced from][]{pricewhelan15} shows the results
+of our survey: unlike the M giants (triangles) the RR Lyrae stars (circles) show
+no clear, tight velocity sequence.
+By modeling both the RR Lyrae and M giants velocities as having been drawn from
+a mixture of two populations --- one representing a low-dispersion foreground
+sequence with varied dispersion, and one representing a background halo
+population with large dispersion, both Gaussian --- we showed that, after
+accounting for selection effects, the number ratio of RR Lyrae to M giants, \frrmg, within the overdensity is $\frrmg < 0.38$ with 95\% confidence.
 
 %\begin{figure}[t]
 %\centering
@@ -415,63 +443,93 @@ By modeling both the RR Lyrae and M giants velocity data as mixtures of two gaus
 %Isochrones for various ages metallicities}
 %\end{figure}
 
-Since we were unable to find any RR Lyrae clearly associated with TriAnd 1, our attempt to measure a more accurate distance to this structure was unsuccessful.
+Since we were unable to find any RR Lyrae clearly associated with TriAnd, our
+attempt to measure more accurate distances to the structure was unsuccessful.
 However, the upper limit on the value of $\frrmg$ was in itself interesting.
-RR Lyrae and M giants are tracers of populations with quite distinct metallicities: stars in the horizontal branch phase of evolution are typically only blue enough to cross the instability strip and become RR Lyrae if they have [Fe/H]$\lesssim -1.5$; and giant stars typically only evolve to colors red enough to become spectral class M if they have [Fe/H]$\gtrsim$-1.5.
-Hence, a stellar population has to contain a significant range of metallicities in order to contain both types of stars.
+RR Lyrae and M giants are tracers of populations with quite distinct
+metallicities: stars in the horizontal branch phase of evolution are typically
+only blue enough to cross the instability strip and become RR Lyrae if they have
+$\feh \lesssim -1.5$; and giant stars typically only evolve to colors red enough
+to become spectral class M if they have $\feh \gtrsim -1.5$.
+Hence, a stellar population has to contain a significant range of metallicities
+in order to contain both types of stars.
 %In order to aid with the interpretation of this discovery, Figure~\ref{fig:isochrones} plots isochrones for two $10~{\rm Gyr}$-old populations of low and intermediate metallicity, including the color range for RR Lyrae and M spectral class.
 %It emphasizes our understanding that these two types of stars are tracers of populations with quite distinct metallicities and illustrates why, while the initial aim of our survey to find more accurate distances to TriAnd 1 and 2 had failed, our results could be even more intriguing.
 The metallicity distributions in nearly all existing satellite galaxies
 orbiting the Milky Way \cite[e.g.,][]{kirby11} are typically biased towards
 low metallicities, such that they contain no or few M giant stars (i.e. $\frrmg = \infty$).
 The largest satellites (the Large Magellanic Cloud and the Sagittarius dwarf galaxy) are exceptions as they contain the most metal rich populations; these dwarfs have $\frrmg \sim 0.5$ \cite{pricewhelan15}.
-In contrast, the Galactic disk is an overall metal-rich population and thus has very few RR Lyrae \cite[i.e. $\frrmg \sim 0$][]{amrose01}, more consistent with our findings for the stellar population of TriAnd 1.
+In contrast, the Galactic disk is an overall metal-rich population and thus has very few RR Lyrae \cite[i.e. $\frrmg \sim 0$;][]{amrose01}, more consistent with our findings for the stellar population of TriAnd.
 
 Our work on the stellar populations of the TriAnd region motivated us to look at possible associations of RR Lyrae with the M giant sequences found in Mon/GASS and A13.
-For the surveyed regions of these structures, we find \frrmg\ values similar to those observed for TriAnd , and consistent with membership of the Galactic disk. A paper on our results is now in preparation (Sheffield et al 2017).
+For the surveyed regions of these structures, we find \frrmg\ values similar to those observed for TriAnd, and therefore consistent with membership of the Galactic disk (Sheffield et al., in prep.).
 
 %{\it Summary: the stellar populations in these groups look like each other; they are more consistent with those in the Galactic disk rather than those observed in the stellar halo or Galactic  satellites.}
 
-\subsection{Abundance Patterns}
+\subsection{High-resolution Spectroscopy: Abundance Patterns}
 
 \label{sec:abundances}
 
-The origin of stellar associations can also be explored through the chemical compositions of their constituent stars.
-However, our finding (described in Section \ref{sec:populations}) that the low-latitude-structures all have stellar populations (as indicated by \frrmg) that look more like the disk than known Galactic satellites is at odds with prior work on abundance patterns.
-For example, high-resolution spectra of 21 M giants in Mon/GASS \cite{chou2010b} showed
-[Ti/Fe] lower by up to 0.4 dex compared to the mean trends known for main-sequence stars of the Galactic disk \cite[e.g.,][]{reddy03,bensby2014} and a mean offset for [Y/Fe] of about 0.2 dex at ${\rm [Fe/H]} \approx -0.5$. A comparison with results from the same group for stars in the Sgr dwarf spheroidal galaxy \cite{chou2010a} suggested more similar patterns to those seen in Mon/GASS and support  an external origin for this structure. Subsequent work comes to similar conclusions for the TriAnd Clouds \cite{chou11}.
+The origin of stellar associations can also be explored through measurements of
+the detailed chemical abundances of their constituent stars.
+Interestingly, our finding that the low-latitude structures all have stellar
+populations (as indicated by \frrmg) that look more like the disk than known
+Galactic satellites (Section~\ref{sec:populations}) appears to be at odds with
+prior work on abundance patterns of stars in these structures.
+High-resolution spectra of 21 M giants in Mon/GASS \cite{chou2010b} showed
+[Ti/Fe] lower by up to 0.4 dex compared to the mean trends known for
+main-sequence stars of the Galactic disk \cite[e.g.,][]{reddy03,bensby2014} and
+a mean offset for [Y/Fe] of about 0.2 dex at ${\rm [Fe/H]} \approx -0.5$.
+A comparison with similar results for stars in the Sgr dwarf spheroidal galaxy
+\cite{chou2010a} suggested that Mon/GASS may be more similar to Sgr than the
+disk, and therefore proposed an external origin for this structure. Subsequent
+work comes to similar conclusions for TriAnd stars \cite{chou11}.
 
 %It should be noted, however, that their results do not agree with the abundances of Ti and, in particular, La, measured in the Canis Major overdensity by \cite{sbordone2005}. Their analysis was based on spectra covering a limited spectral region in the near-IR, including 11 neutral iron and 2 neutral titanium lines. Also \cite{chou2010b} caution that the effects of non-local thermodynamic equilibrium (non-LTE) may be significant, since their measurement of metallicity and Ti abundances relies on the LTE analysis of lines of neutral species,
 
 % ALLY COMMENT: Was this the actual motivation, if we look back at the
 % proposal? We were asking for time to explore the possibility of TriAnd being
 % a kicked out disk population
-In order to explore the apparent contradiction between the stellar populations and abundance work we have recently obtained high-resolution and signal-to-noise spectra of 15 stars in TriAnd 1 and A13 overdensities. 14 stars were observed with the HIRES-S spectrograph at the Keck-1 telescope \cite{vogt1994} and 1 star was observed using the the UVES spectrograph at the VLT (Program ID: 097.B-0770A).
+In order to explore the apparent contradiction between the stellar populations
+and abundance work, we have recently obtained high-resolution ($R \sim
+30,000$--$40,000$) and high signal-to-noise ($>200$) spectra of 15 stars in the
+TriAnd and A13 overdensities.
+14 stars were observed with the HIRES-S spectrograph at the Keck-1 telescope
+\cite{vogt1994} and 1 star was observed using the the UVES spectrograph at the
+VLT (Program ID: 097.B-0770A).
 %The spectral resolving power R of the HIRES spectra is 36\,000 and the UVES data have R $\sim$ 47\,000. All Keck spectra cover the full optical region, from $4800$ to $8770$ $\AA$, although the exact wavelength coverage varies as several slightly different instrument configurations were tried in an effort to get all the key lines into a single exposure. The signal-to-noise (SNR)/\AA of the HIRES spectra near 5200 \AA in the continuum at the center of the echelle order exceeds 200. For the UVES spectrum, the SNR of 50 near 5500 \AA was achieved. The fundamental parameters and chemical abundances of stars were determined using 2MASS and APASS photometry and the high-resolution spectra. All 15 stars are M-type giants with effective temperatures Teff ~ 3800 K and surface gravities log(g) ~ 1 dex. The $T_{\rm eff}$ estimates were derived using the Infrared Flux Method (Casagrande et al. 2010, 2014). Chemical abundances were measured for 6 chemical elements, including O, Na, Mg, Ca, Fe, Eu using LTE and the standard MARCS stellar model atmospheres (Gustafsson et al. 2008). We have also performed detailed analysis of the effects of non-local thermodynamic equilibrium (non-LTE) for the elements, where detailed calculations are available \cite{bergemann2011, bergemann2012, bergemann2016}, however, the NLTE corrections for the chosen lines are minor and do not change our conclusions. In what follows, we use our LTE results, because all studies of chemical abundances in dSph systems and most studies in the Milky Way to date have employed LTE with 1D hydrostatic models
-We find that stars in the TriAnd 1 and in A13 overdensities have extremely similar chemical abundances, with the abundance dispersion $\leq 0.06$ dex for most chemical elements. The TriAnd 1 and A13 stars also have a very narrow metallicity spread,  ${\rm [Fe/H]} = -0.92 \pm 0.06$ dex. The abundances of all measured alpha-elements are uniformly enhanced at the level of 0.43 $\sim$ 0.06 dex for [O/Fe], 0.41 $\sim$ 0.02 dex for [Mg/Fe], $0.35 \pm 0.06$ dex for [Na/Fe], and 0.15 $\sim$ 0.03 dex for [Eu/Fe]. At this level, the TriAnd 1 and A13 stars are consistent with the abundances of the in-situ formed Milky Way thick disk stars \cite{fuhrmann2004,bergemann2014,bensby2014}.
-\footnote{The only exception is [Ca/Fe], which is consistent with solar with the dispersion of 0.06 dex; however, the NLTE abundance correction for the \ion{Ca}{i} lines for M giants is 0.1 dex that will bring the results in agreement with the MW disk studies that are based on FGK dwarfs, for which the NLTE correction is much smaller \cite{Merle2011}}.
-The abundance ratios are too high for the chemical abundance patterns observed in the stars of the Galactic satellites \cite{Bonifacio:2000,shetrone2001,shetrone2003,Tolstoy:2009,deBoer:2014}, which are known to have low, typically solar ( [O/Fe], [Mg/Fe]) or even sub-solar ([Na/Fe]), ratios at [Fe/H] $\sim -1$.
+We find that the stars in both structures have extremely similar chemical
+abundances, with the abundance dispersion $\leq 0.06$ dex for most chemical
+elements.
+The TriAnd and A13 stars also have a very narrow metallicity spread, ${\rm
+[Fe/H]} = -0.92 \pm 0.06$ dex.
+The abundances of all measured alpha-elements are uniformly enhanced at the
+level of [O/Fe] = $0.43 \pm 0.06$ dex, [Mg/Fe] = $0.41 \pm 0.02$ dex,
+[Na/Fe] = $0.35 \pm 0.06$ dex, and [Eu/Fe] = $0.15 \pm 0.03$ dex.
+At this level, the TriAnd and A13 stars are consistent with the abundances of
+the in-situ formed Milky Way thick disk
+stars\cite{fuhrmann2004,bergemann2014,bensby2014}.
+The only exception is [Ca/Fe], which is consistent with solar with the dispersion of 0.06 dex; however, the non-local thermodynamic equilibrium (NLTE) abundance correction for the \ion{Ca}{i} lines for M giants is 0.1 dex that will bring the results in agreement with the MW disk studies that are based on FGK dwarfs, for which the NLTE correction is much smaller \cite{Merle2011}.
+The abundance ratios are too high for the chemical abundance patterns observed in the stars of the Galactic satellites \cite{Bonifacio:2000,shetrone2001,shetrone2003,Tolstoy:2009,deBoer:2014}, which are known to have low, typically solar ([O/Fe], [Mg/Fe]) or even sub-solar ([Na/Fe]), ratios at [Fe/H] $\sim -1$.
 
 %For example, Fornax, a dSph galaxy most close to TriAnd 1 and A13 in metallicity, has [Na/Fe] $\sim -0.6$ dex and [Mg/Fe] $\sim 0$ at [Fe/H] $=-1$ (Letarte et al. 2010, Kirby 2010, Lemasle et al. 2014) \footnote{Note that to avoid systematic differences between abundance measurements obtained from spectra taken with different instruments, we have chosen here to compare with the data taken with the same instrument; here UVES and FLAMES at the VLT, ESO, or with HIRES at Keck.}.
 
 %Our results for TriAnd and A13 do not confirm the conclusions by \cite{chou2010b}. Although there could be several astrophysical reasons for the differences, this could be caused by the
-One explanation for the disagreement between abundance work for stars in the same structure is
-differences in the observed datasets and spectroscopic modeling techniques.
+One explanation for the disagreement between our and prior abundance work for
+stars in the same structures is differences in the observed datasets and
+spectroscopic modeling techniques.
 %Our observed data cover the full optical range from the near-UV to the near-IR, whereas
-\cite{chou2010b} analysed a small wavelength region in the near-IR, limited to 150 \AA\ from 7440 to 7590 \AA. Because of this limitation, they could include only 11 \ion{Fe}{I} and 2 \ion{Ti}{I} lines in the determination of gravities, metallicities, and abundances. Our analysis, through a much wider wavelength coverage and high SNR attained for the observed spectra, allowed us to include 70 lines of \ion{Fe}{I} and \ion{Fe}{II} \cite{bergemann2012}, as well as 10 lines of \ion{Ti}{2}. Moreover,  \cite{bergemann2011} showed that \ion{Ti}{1} should be not be used in abundance studies because it is very sensitive to NLTE effects .
-In order to explore the sensitivity of abundance diagnostics to the line selection and wavelength regimes we performed test computations on our own data, using a reduced linelist. We have found that using the linelist from \cite{chou2010a}, the metallicities are over-estimated by $\sim 0.25$ dex and [Ti/Fe] are under-estimated by $0.4$ dex, compared to the results using the complete linelist. This suggests that the choice of the linelist and diagnostic spectral band (full optical or near-IR) as a plausible explanation  of the apparently discrepant results.
+Past work \cite{chou2010b,chou11} analysed a small wavelength region in the near-IR, limited to 150 \AA\ from 7440 to 7590 \AA. Because of this limitation, they could include only 11 \ion{Fe}{I} and 2 \ion{Ti}{I} lines in the determination of gravities, metallicities, and abundances. Our analysis, through a much wider wavelength coverage and high SNR attained for the observed spectra, allowed us to include 70 lines of \ion{Fe}{I} and \ion{Fe}{II} \cite{bergemann2012}, as well as 10 lines of \ion{Ti}{2}. Moreover, it has been shown that \ion{Ti}{1} should be not be used in abundance studies because it is very sensitive to NLTE effects \cite{bergemann2011}.
+In order to explore the sensitivity of abundance diagnostics to the line selection and wavelength regimes we performed test computations on our own data, using a reduced line-list. We have found that using the line-list from \cite{chou2010a}, the metallicities are over-estimated by $\sim 0.25$ dex and [Ti/Fe] are under-estimated by $0.4$ dex, compared to the results using the complete line-list. This suggests that the choice of the line-list and diagnostic spectral band (full optical or near-IR) as a plausible explanation  of the apparently discrepant results.
 %{\it Summary: the abundance patterns  of the low-latitude structures are similar to those of the thick disk of our Galaxy.}
 
-Overall, comparing our work to abundances of disk stars and satellite populations obtained using analogous data sets and reduction techniques, our results suggest that the birthplace of stars in TriAnd 1 and A13 was the outer Galactic disk rather than an infalling satellite galaxy.
-A paper describing this work is currently in preparation (Bergemann et al., in prep.).
+Overall, comparing our work to abundances of disk stars and satellite populations obtained using analogous data sets and reduction techniques, our results suggest that the birthplace of stars in TriAnd and A13 was the outer Galactic disk rather than an infalling satellite galaxy (Bergemann et al., in prep.).
 
 %it is unlikely that the TriAnd 1 and A13 stars originate from a disrupted dSph galaxy
 
-\subsection{Photometric Surveys}
+\subsection{Mapping Main-sequence Stars in the Low-latitude Structures}
 
-% APW COMMENT: If the sections are reorganized to be by structure instead, this
-% should be moved to the section on Mon/GASS, I believe
-While we have concentrated on follow-up studies of the known low-latitude structures as traced by M giants selected from 2MASS, knowledge of the spatial distribution of MSTO stars towards the anticenter region has been further refined using photometry from the SDSS \cite{xu15} and PS1 surveys (Lurie et al., in prep.).
+While we have concentrated on follow-up studies of the known low-latitude structures as traced by M giants selected from 2MASS, knowledge of the spatial distribution of MSTO stars towards the anticenter region has been further refined using photometry from the SDSS \cite{xu15} and Pan-STARRS1 surveys (Lurie et al., in prep.).
 Both of these studies employ the novel technique of subtracting color-magnitude diagrams (CMD's) derived from fields in their photometric data which were symmetrically placed at equal and opposite Galactic latitudes and at the same Galactic longitudes.
 These differenced CMD's allowed denser regions, closer to the Galactic plane and at smaller heliocentric distances  to be explored.
 Both studies showed overdense arcs or stars oscillating between the northern and southern hemispheres as the distance from the Sun was increased towards the anticenter of our Galaxy.
@@ -479,24 +537,18 @@ The vast numbers of stars in these surveys allowed more clear identification of 
 
 %{\it Summary: the overdensities around the outer Galaxy, oscillating between the northern and southern hemispheres have been traced to smaller-scale oscillations all the way to the Solar Neighborhood.}
 
+\subsection{Connecting the Low-latitude Structures to Velocity Structure Near the Solar Radius}
 
-
-% APW COMMENT: If you reorganize, I would move the discussion of simulations of
-% individual structures to their respective sections about. Instead, I would
-% make this section something like "Theoretical interpretations of the global
-% structure of the outer disk"
-
-\subsection{Local Spectroscopic Surveys}
-
-% APW COMMENT: If the sections are reorganized to be by structure instead,
-% this could get moved to the discussion. "Discussion: connections to velocity
-% structure near the Sun" or something
-
-Coincident with these studies exploring structures at the very outer edge of our Galactic disk,
-large scale spectroscopic surveys have allowed a detailed re-examination of the {\it local} distribution of stellar velocities.
-Asymmetries between the Northern and Southern Galactic hemispheres in the vicinity of the Sun have been seen in the density and velocity distributions using data from SDSS \cite{widrow12,yanny13} and RAdial Velocity Experiment \cite[RAVE, see][]{??,williams13}.
-Looking $\sim$2 kpc out towards the Galactic anticenter, the Large Sky Area Multi-Object Fiber Spectroscopic Telescope \cite[LAMOST,][]{cui12,deng12,zhao12} finds similar asymmetries in radial and vertical velocities \cite{carlin13}.
-The scale and sense of these asymmetries indicate moderate systematic motions (of order a few km/s)  of stars within the disk perpendicular to the plane,  suggesting both vertical movement of the midplane, and compression and rarefaction of the vertical scale \cite[referred to as ``bending'' and ``breathing'' modes respectively --- see,][]{widrow14}.
+% APW COMMENT: what exactly do we mean by "local"? < 2 kpc? < a few kpc?
+Coincident with studies exploring structures at the very outer edge of our
+Galactic disk, large scale spectroscopic surveys have allowed a detailed
+re-examination of the {\it local} distribution of stellar velocities.
+Using data from the SDSS \cite{widrow12,yanny13} and the RAdial Velocity
+Experiment \cite[RAVE;][]{rave,williams13}, asymmetries between the northern and
+southern Galactic hemispheres have been seen in the density and velocity
+distributions of stars in the vicinity of the sun.
+Looking $\sim$2 kpc out towards the Galactic anticenter, the Large Sky Area Multi-Object Fiber Spectroscopic Telescope \cite[LAMOST;][]{cui12,deng12,zhao12} finds similar asymmetries in radial and vertical velocities \cite{carlin13}.
+The scale and sense of these asymmetries indicate moderate systematic motions (of order a few km/s) of stars within the disk perpendicular to the plane, suggesting both vertical movement of the midplane, and compression and rarefaction of the vertical scale \cite[referred to as ``bending'' and ``breathing'' modes respectively --- see, e.g.,][]{widrow14}.
 It is natural to associate these asymmetries in motion as a local manifestations of the oscillations traced in space over much larger scales \cite{xu15,pricewhelan15}.
 %{\it Summary: small-scale, systematic vertical motions of and within the disk have been detected in the Solar Neighborhood.}
 
@@ -516,12 +568,12 @@ The observations summarized in Section \ref{sec:obs} indicate that:
 \item small-scale, systematic vertical motions of and within the disk have been detected in the Solar Neighborhood which suggest the local disk is moving up and down.
 \end{itemize}
 
-\begin{figure}[t]
-\centering
-\includegraphics[width=4 in]{figures/cartoon.pdf}
-\caption{\label{fig:cartoon}
-TODO: Cartoon of oscillations in space and velocity}
-\end{figure}
+% \begin{figure}[t]
+% \centering
+% \includegraphics[width=4 in]{figures/cartoon.pdf}
+% \caption{\label{fig:cartoon}
+% TODO: Cartoon of oscillations in space and velocity}
+% \end{figure}
 
 % TING COMMENT: everything above line 251 is really summary of observation.
 % Maybe this should go to Section 2.6? It is kinda confusing that this section
